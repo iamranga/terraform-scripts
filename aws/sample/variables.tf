@@ -26,3 +26,17 @@ variable "number_of_instances" {
 variable "ami_key_pair_name" {
   default = "morpheus-key"
 }
+
+variable "access_key" {
+  type = "string"
+}
+
+variable "secret_key" {
+  type = "string"
+}
+
+module "tfvars" {
+  source = "tfvars/profile/cloud/ADM-AWS/variables"
+  access_key = var.access_key
+  secret_key = var.secret_key
+}
