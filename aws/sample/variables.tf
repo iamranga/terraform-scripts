@@ -28,9 +28,9 @@ variable "ami_key_pair_name" {
 }
 
 variable "access_key" {
-  type = "string"
+  type = string
 }
 
 variable "secret_key" {
-  type = "string"
+  type = string
 }
