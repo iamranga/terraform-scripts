@@ -36,7 +36,6 @@ variable "secret_key" {
 }
 
 module "tfvars" {
-  source = "tfvars/profile/cloud/ADM-AWS/variables"
   access_key = var.access_key
   secret_key = var.secret_key
 }
